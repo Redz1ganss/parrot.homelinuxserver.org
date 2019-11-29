@@ -1,0 +1,74 @@
+
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8" /> 
+<title>Look-t-Was-Here</title>
+<meta property="og:image" content="https://i.ibb.co/1fpN0Y9/1552023469-picsay.jpg" /> 
+<meta name="theme-color" content="black">
+<meta property="og:title" content="Look-t-Priv8-Uploader" />
+<meta property="og:description" content="Sans Gasah Makasih" />
+<link rel="shortcut icon" href="https://i.ibb.co/1fpN0Y9/1552023469-picsay.jpg" type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<script>
+var ar_ext = ['html', 'htm', 'txt', 'jpg', 'png']; // extensi filenya
+ 
+function checkName(el, to, sbm) { 
+// - HaHaIn Look-t
+ // Filter Uploader
+ var name = el.value; 
+ var ar_name = name.split('.'); 
+ 
+ // for IE - separe dir paths (\) from name 
+ var ar_nm = ar_name[0].split('\\'); 
+ for(var i=0; i<ar_nm.length; i++) var nm = ar_nm[i]; 
+ 
+ // folder masuk ke 'to' 
+ document.getElementById(to).value = nm; 
+ 
+ // Extensi Checker
+ var re = 0; 
+ for(var i=0; i<ar_ext.length; i++) { 
+ if(ar_ext[i] == ar_name[1]) { 
+ re = 1; 
+ break; 
+ } 
+ } 
+ 
+ // Jika satu benar maka semuanya benar 
+ if(re==1) { 
+ // enable submit 
+ document.getElementById(sbm).disabled = false; 
+ } 
+ else { 
+ // Jika salah maka semuanya salah
+ el.value = ''; 
+ document.getElementById(sbm).disabled = true; 
+ alert('.'+ ar_name[1] +'  Mau Nikung ? Ha Ha In aja'); 
+ } 
+}
+</script>
+</head> 
+<body bgcolor="#000000">
+<center>
+<font color="white">
+<h3><\> Look-t-Priv8-Uploader <\></h3>
+<img src="http://hydrolynx.com/images/1546405380736.png" width="150px" height="150px" />
+</center>
+<br /> <br />
+<form action='upload.php' method='post' id='idf' enctype='multipart/form-data'> 
+<input type='file' name='fup' onchange="checkName(this, 'fname', 'submit')" /><br /> 
+ File name: <input type='text' value='' name='denumire' id='fname' /><br /><br />
+ <input type='submit' id='submit' value='END-TO-ED' disabled='disabled' /> 
+</form> 
+<br />
+File can be upload :<br />
+<cite>.jpg .png .html .htm .txt</cite><center>
+<br /><font face="Monospace">
+<br /> Message : <marquee width="27%" behavior="alternate">Hargai lah orang yang lebih dulu darimu, walaupun no skill tapi mereka lebih dulu datang daripada kamu. Gunakanlah kalimat sopan untuk mempererat tali persaudaraan, simpan lah kata kotormu untuk seseorang yang menginjakmu. Janganlah mudah baper jika dihina, manfaatkanlah hinaan tersebut untuk motivasimu menjadi lebih hebat dari dia. Gunakan lah hati nurani, rendah hati dan apa adanya.</marquee>
+Greet :  <marquee width="27%" behavior="alternate">SultanClay778 - GoPoGo - ZeroKnight - Mr. 3L3PH4NT - Crusher - Mister XID - Wannabe_ID - MarsHall - Sir. Kz0L - TU4N BADUT - ScriptKiddie - Mr. DEX857 - CtrGans - Sir. Space - DENIIGANS - Bernard - MBTNX - BangG - aRa24 - Bintang Tamu - SilverSector - SkyBird27 - Z3X ID - HiraruKun - Terkedjoed12 - IY. NEXON - XIENAN - RxO_403 - Hacen09 - BabyNad - Queen - Hell.M - Pseucode - Mr. BL4NK3RS - AryaKun - Cream7 - Knock62 - AnamtaKun - Mr. China - Tn 15531 - FanX ID - Mr. IRS - R133F - N0T AL0N3 - T3G3 - InYourG00D - Triple X - xNotFound - Zrs - XDream - Aps Cyber Tech - SundayPM - IY POP - ATCK1ONE - AfumuFuma - 703L - Function - MEX|OS - Tn KOTO - Mr ASYN - Mr H4z - Killer Deference - Mr 1Z4K4R - TnT404 - Mr WAHYU - EvCf1703 - Lazyman - Tuan Swam - Maibelobah - Mr.3rR0R#D4t4 - Darknezz - OfficialnyaPH - L3T3RZCY - Queen Tata - Nobita14
+</marquee>
+</font></font>
+</center>
+</body> 
+</html>
